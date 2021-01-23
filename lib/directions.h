@@ -1,0 +1,11 @@
+#ifndef SNAKE_DIRECTIONS_H
+#define SNAKE_DIRECTIONS_H
+
+typedef enum {
+	DIRECTION_UP,
+	DIRECTION_RIGHT,
+	DIRECTION_DOWN,
+	DIRECTION_LEFT,
+} direction_t;
+
+#endif

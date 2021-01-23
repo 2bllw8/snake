@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 		return 1;
 	}
 
-	run(game);
+	run_cli(game);
 	game_destroy(game);
 	return 0;
 }

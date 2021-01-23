@@ -36,7 +36,7 @@ bool game_frame(game_t *game)
 							  snake_x(game->snake),
 							  snake_y(game->snake));
 		if (score_increased) {
-			snake_on_score_increased(game->snake);
+			snake_increase_length(game->snake);
 		}
 	}
 	return step;

@@ -29,7 +29,7 @@ uint16_t apple_score(apple_t *);
 bool apple_on_game_move(apple_t *, uint8_t x, uint8_t y);
 
 /*
- * Display information about the apple for a given point.
+ * Obtain display info for a given coordinate.
  * It can be DISPLAY_NONE or DISPLAY_APPLE
  */
 game_display_t apple_display(apple_t *, uint8_t x, uint8_t y);

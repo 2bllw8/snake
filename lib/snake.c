@@ -104,7 +104,7 @@ uint8_t snake_y(snake_t *snake)
 	return tail_y(snake->head);
 }
 
-void snake_on_score_increased(snake_t *snake)
+void snake_increase_length(snake_t *snake)
 {
 	if (!snake) {
 		return;

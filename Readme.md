@@ -1,32 +1,33 @@
 # Snake
 
 ```
-Score: 4
+Score: 11
 +------------------------------+
 |                              |
 |                              |
 |                              |
 |                              |
 |                              |
-|                              |
-|                              |
-|                              |
-|                        *     |
+|         #                    |
+|         #                    |
+|      ####                    |
+|      #                 *     |
 |      ##########@             |
 +------------------------------+
 ```
 
-Simple snake game implemented in C with ncurses
+Simple snake game implemented in C.
+
+CLI gui is implemented with ncurses.
 
 ## Build
 
-```shell
+```bash
 bazel build //main:snake
 ```
 
 ## Run
 
-```shell
+```bash
 ./bazel-bin/main/snake
 ```
-

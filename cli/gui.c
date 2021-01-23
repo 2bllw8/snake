@@ -96,7 +96,7 @@ status_t game_over(game_t *game)
 
 void *keys_listener(void *extra)
 {
-	key_listener_args *args = (key_listener_args *) extra;
+	key_listener_args *args = (key_listener_args *)extra;
 	while (listen_keys) {
 		if (*args->status != STATUS_PLAYING) {
 			continue;
@@ -127,12 +127,12 @@ void screen_teardown()
 	endwin();
 }
 
-void run(game_t *game)
+void run_cli(game_t *game)
 {
 	screen_setup();
 	status_t status = STATUS_READY;
 
-	key_listener_args args = {.status = &status, .game = game};
+	key_listener_args args = { .status = &status, .game = game };
 	// Listen for keys in another thread
 	pthread_t keys_thread;
 	listen_keys = true;
@@ -148,7 +148,7 @@ void run(game_t *game)
 		}
 		napms(FRAME_INTERVAL);
 	}
-	
+
 	listen_keys = false;
 	pthread_join(keys_thread, 0);
 	screen_teardown();

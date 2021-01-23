@@ -4,8 +4,8 @@
 #include "../lib/game.h"
 
 /**
- * Run the game
+ * Run the game in the cli
  */
-void run(game_t *);
+void run_cli(game_t *);
 
 #endif
